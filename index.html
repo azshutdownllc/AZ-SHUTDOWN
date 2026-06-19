@@ -36,6 +36,8 @@
       border-bottom:1px solid rgba(255,255,255,.08);
     }
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px}
+    .brand-section{display:flex;align-items:center;gap:12px}
+    .brand-logo{height:40px;width:auto}
     .brand{font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:1rem}
     .nav-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
     .nav-links a{color:var(--muted);font-size:.92rem;font-weight:600}
@@ -90,13 +92,17 @@
       h1{font-size:clamp(2.6rem,12vw,4.8rem)}
       .focus-list{grid-template-columns:1fr}
       .nav-inner{flex-direction:column;align-items:flex-start}
+      .brand-section{flex-direction:column;align-items:flex-start}
     }
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand">AZ Shutdown</div>
+      <div class="brand-section">
+        <img src="logo.png" alt="AZ Shutdown Logo" class="brand-logo">
+        <div class="brand">AZ Shutdown</div>
+      </div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -131,7 +137,7 @@
         <div>
           <div class="section-title">About AZ Shutdown</div>
           <div class="accent-line"></div>
-          <p class="section-copy">AZ Shutdown is dedicated to helping athletes improve their speed, strength, conditioning, technical skills, and confidence on the field. Our goal is to help every player reach their full potential through professional coaching and competitive training.</p>
+          <p class="section-copy">AZ Shutdown is dedicated to helping athletes improve their speed, strength, conditioning, technical skills, and confidence on the field. Our goal is to help ever[...]
         </div>
         <div class="card">
           <h3>Training Photos</h3>
